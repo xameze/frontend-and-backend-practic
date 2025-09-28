@@ -1,42 +1,48 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Практики - Семестровая работа</title>
+        <link rel="stylesheet" href="../style/styles.css">
     </head>
     <body>
-        <div id="header">Хэдер</div>
-        <div id="menu">
-            <ul>
-                <li><a href="../index.html">Главная</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="practices.html">Практики</a></li> 
-                <li><a href="goods.html">Товары</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
+        <div class="page-container">
+            <div class="header">Хэдер</div>
+            <div class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h1>Практические материалы</h1>
+                
+                <div class="practice-item">
+                    <h2>Практика 1: Основы HTML</h2>
+                    <p>Изучение базовых тегов HTML, создание простых веб-страниц. В этом модуле вы научитесь создавать структуру веб-страницы, работать с текстом, изображениями и ссылками.</p>
+                    <p><strong>Темы:</strong> Структура HTML-документа, текстовые теги, списки, таблицы, формы, семантическая верстка.</p>
+                    <a href="../practices/html-basics.pdf">Скачать материал</a>
+                </div>
+                
+                <div class="practice-item">
+                    <h2>Практика 2: Работа с CSS</h2>
+                    <p>Основы стилизации веб-страниц, работа с селекторами и свойствами. Научитесь создавать современные и адаптивные интерфейсы с помощью каскадных таблиц стилей.</p>
+                    <p><strong>Темы:</strong> Селекторы, боковая модель, позиционирование, Flexbox, Grid, анимации, медиа-запросы.</p>
+                    <a href="../practices/css-basics.pdf">Скачать материал</a>
+                </div>
+                
+                <div class="practice-item">
+                    <h2>Практика 3: JavaScript для начинающих</h2>
+                    <p>Введение в программирование на JavaScript, базовые конструкции языка. Освойте фундаментальные концепции программирования и научитесь добавлять интерактивность на веб-страницы.</p>
+                    <p><strong>Темы:</strong> Переменные, типы данных, функции, объекты, DOM-манипуляции, события.</p>
+                    <a href="../practices/js-basics.pdf">Скачать материал</a>
+                </div>
+            </div>
+            <div class="footer">Футер</div>    
         </div>
-        <div id="content">
-            <h1>Практические материалы</h1>
-            
-            <div class="practice-item">
-                <h2>Практика 1: Основы HTML</h2>
-                <p>Изучение базовых тегов HTML, создание простых веб-страниц.</p>
-                <a href="../practices/html-basics.pdf">Скачать материал</a>
-            </div>
-            
-            <div class="practice-item">
-                <h2>Практика 2: Работа с CSS</h2>
-                <p>Основы стилизации веб-страниц, работа с селекторами и свойствами.</p>
-                <a href="../practices/css-basics.pdf">Скачать материал</a>
-            </div>
-            
-            <div class="practice-item">
-                <h2>Практика 3: JavaScript для начинающих</h2>
-                <p>Введение в программирование на JavaScript, базовые конструкции языка.</p>
-                <a href="../practices/js-basics.pdf">Скачать материал</a>
-            </div>
-        </div>
-        <div id="footer">Футер</div>    
     </body>
 </html>
