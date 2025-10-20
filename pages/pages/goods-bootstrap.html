@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары - Семестровая работа (Bootstrap)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="bg-light">
+    <!-- Шапка -->
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h1 class="h4 mb-0">X2App</h1>
+                </div>
+                <div class="col-auto">
+                    <span class="badge bg-primary">Товары</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index-bootstrap.html">
+                            <i class="bi bi-house me-1"></i>Главная
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news-bootstrap.html">
+                            <i class="bi bi-newspaper me-1"></i>Новости
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="practices-bootstrap.html">
+                            <i class="bi bi-code-slash me-1"></i>Практики
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="goods-bootstrap.html">
+                            <i class="bi bi-cart me-1"></i>Товары
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts-bootstrap.html">
+                            <i class="bi bi-telephone me-1"></i>Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="container my-4">
+        <h1 class="text-center mb-4">Каталог товаров</h1>
+        
+        <div class="row g-4">
+            <!-- Товар 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Ноутбук игровой</h5>
+                        <p class="card-text">Мощный игровой ноутбук для комфортной игры</p>
+                        <p class="h5 text-primary">75 000 руб.</p>
+                        <button class="btn btn-primary w-100">
+                            <i class="bi bi-cart-plus me-2"></i>В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Товар 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Смартфон</h5>
+                        <p class="card-text">Флагманский смартфон с тройной камерой</p>
+                        <p class="h5 text-primary">35 000 руб.</p>
+                        <button class="btn btn-primary w-100">
+                            <i class="bi bi-cart-plus me-2"></i>В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Товар 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Беспроводные наушники</h5>
+                        <p class="card-text">Наушники с шумоподавлением</p>
+                        <p class="h5 text-primary">8 500 руб.</p>
+                        <button class="btn btn-primary w-100">
+                            <i class="bi bi-cart-plus me-2"></i>В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Товар 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Учебник по программированию</h5>
+                        <p class="card-text">Комплексный учебник для разработчиков</p>
+                        <p class="h5 text-primary">1 200 руб.</p>
+                        <button class="btn btn-primary w-100">
+                            <i class="bi bi-cart-plus me-2"></i>В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Товар 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Механическая клавиатура</h5>
+                        <p class="card-text">Профессиональная механическая клавиатура</p>
+                        <p class="h5 text-primary">4 500 руб.</p>
+                        <button class="btn btn-primary w-100">
+                            <i class="bi bi-cart-plus me-2"></i>В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Товар 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Монитор 24 дюйма</h5>
+                        <p class="card-text">Игровой монитор с высокой частотой</p>
+                        <p class="h5 text-primary">15 000 руб.</p>
+                        <button class="btn btn-primary w-100">
+                            <i class="bi bi-cart-plus me-2"></i>В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="bg-dark text-white py-3 mt-4">
+        <div class="container">
+            <p class="mb-0 text-center">&copy; 2025 X2App. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
