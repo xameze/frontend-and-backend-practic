@@ -3,79 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Семестровая работа</title>
+    <title>Главная - Портфолио</title>
     <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-    <div class="page-container">
-        <!-- Заменяем div на семантический тег header -->
+    <div class="page">
+        <!-- Шапка -->
         <header class="header">
-            <h1>X2App</h1>
+            <h1 class="header__title">Моё портфолио</h1>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
         </header>
 
-        <!-- Заменяем div на семантический тег nav -->
+        <!-- Навигация -->
         <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="pages/news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="pages/practices.html">Практики</a></li> 
-                <li class="nav-item"><a class="nav-link" href="pages/goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="pages/contacts.html">Контакты</a></li>
+            <ul class="nav__list">
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/practices.html">Практики</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/goods.html">Товары</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/contacts.html">Контакты</a>
+                </li>
             </ul>
         </nav>
 
-        <!-- Заменяем div на семантический тег main -->
-        <main class="content">
-            <article class="profile-header">
-                <h1 class="profile-title">Информация об авторе</h1>
-                <img class="profile-photo" src="images/photo.png" alt="Фото автора">
-                <h2 class="profile-name">Подгузов Максим Дмитриевич</h2>
-                <p class="profile-group">ЭФБО-15-24</p>
-            </article>
-            
-            <section class="about-me">
-                <h2>Обо мне</h2>
-                <p>Обо мне: Я родился в Москве в 70-м на краю города. Глупость рано ударила в голову. В четыре активно ругался.
-                Потом школа, форма, драки, клей. Так я становился сильней. Воровал деньги в раздевалке.</p>
-            </section>
-            
-            <section class="skills-container">
-                <h2>Мои навыки</h2>
-                <!-- Добавляем Grid для навыков -->
-                <div class="skills-grid">
-                    <div class="skill-tag">HTML/CSS</div>
-                    <div class="skill-tag">JavaScript</div>
-                    <div class="skill-tag">React</div>
-                    <div class="skill-tag">Node.js</div>
-                    <div class="skill-tag">Python</div>
-                    <div class="skill-tag">Git</div>
+        <!-- Основной контент -->
+        <main class="main">
+            <!-- Профиль -->
+            <section class="profile">
+                <div class="profile__card">
+                    <img class="profile__photo" src="images/photo.png" alt="Фото">
+                    <div class="profile__info">
+                        <h2 class="profile__name">Подгузов Максим Дмитриевич</h2>
+                        <p class="profile__group">ЭФБО-15-24</p>
+                    </div>
                 </div>
             </section>
-            
-            <section class="experience-section">
-                <h2 class="section-title">Мой опыт работы</h2>
-                <!-- Добавляем Grid для карточек опыта -->
-                <div class="experience-grid">
-                    <article class="experience-card">
-                        <h3 class="experience-title">Frontend разработчик</h3>
-                        <p class="experience-desc">Разработка пользовательских интерфейсов с использованием современных технологий.</p>
-                    </article>
-                    <article class="experience-card">
-                        <h3 class="experience-title">Backend разработчик</h3>
-                        <p class="experience-desc">Создание серверной логики и API для веб-приложений.</p>
-                    </article>
-                    <article class="experience-card">
-                        <h3 class="experience-title">Fullstack разработчик</h3>
-                        <p class="experience-desc">Полный цикл разработки веб-приложений от интерфейса до сервера.</p>
-                    </article>
+
+            <!-- Обо мне -->
+            <section class="about">
+                <h2 class="about__title">Обо мне</h2>
+                <div class="about__content">
+                    <p class="about__text">
+                        Студент, увлекаюсь веб-разработкой. Изучаю HTML, CSS и JavaScript. 
+                        Люблю создавать красивые и функциональные сайты.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Навыки -->
+            <section class="skills">
+                <h2 class="skills__title">Мои навыки</h2>
+                <div class="skills__list">
+                    <div class="skill skill--html">
+                        <span class="skill__name">HTML</span>
+                    </div>
+                    <div class="skill skill--css">
+                        <span class="skill__name">CSS</span>
+                    </div>
+                    <div class="skill skill--js">
+                        <span class="skill__name">JavaScript</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Проекты -->
+            <section class="projects">
+                <h2 class="projects__title">Проекты</h2>
+                <div class="projects__grid">
+                    <div class="project-card">
+                        <h3 class="project-card__title">Личный сайт</h3>
+                        <p class="project-card__desc">Сайт-портфолио на HTML и CSS</p>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-card__title">Todo приложение</h3>
+                        <p class="project-card__desc">Простое приложение для задач</p>
+                    </div>
                 </div>
             </section>
         </main>
 
-        <!-- Заменяем div на семантический тег footer -->
+        <!-- Подвал -->
         <footer class="footer">
-            <p>&copy; 2025 X2App. Все права защищены.</p>
-        </footer>    
+            <p class="footer__text">&copy; 2025 Мой сайт</p>
+        </footer>
     </div>
+
+    <script src="script/script.js"></script>
 </body>
 </html>

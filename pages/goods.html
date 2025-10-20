@@ -1,65 +1,103 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Товары - Семестровая работа</title>
-        <link rel="stylesheet" href="../style/styles.css">
-    </head>
-    <body>
-        <div class="page-container">
-            <div class="header">Хэдер</div>
-            <div class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-                </ul>
-            </div>
-            <div class="content">
-                <h1>Каталог товаров</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары - Семестровая работа</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <h1 class="header__title">X2App</h1>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+        </header>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="../index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="practices.html">Практики</a>
+                </li>
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="goods.html">Товары</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <h1>Каталог товаров</h1>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <img class="product-card__image" src="../images/product1.jpg" alt="Ноутбук игровой">
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Ноутбук игровой</h3>
+                        <p class="product-card__price">75 000 руб.</p>
+                        <button class="product-card__button">В корзину</button>
+                    </div>
+                </div>
                 
-                <div class="product-grid">
-                    <div class="product-card">
-                        <img src="../images//product1.jpg" alt="Ноутбук">
-                        <h3>Ноутбук игровой</h3>
-                        <p>75 000 руб.</p>
+                <div class="product-card">
+                    <img class="product-card__image" src="../images/product2.jpg" alt="Смартфон">
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Смартфон</h3>
+                        <p class="product-card__price">35 000 руб.</p>
+                        <button class="product-card__button">В корзину</button>
                     </div>
-                    
-                    <div class="product-card">
-                        <img src="../images/product2.jpg" alt="Смартфон">
-                        <h3>Смартфон</h3>
-                        <p>35 000 руб.</p>
+                </div>
+                
+                <div class="product-card">
+                    <img class="product-card__image" src="../images/product3.jpg" alt="Наушники">
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Беспроводные наушники</h3>
+                        <p class="product-card__price">8 500 руб.</p>
+                        <button class="product-card__button">В корзину</button>
                     </div>
-                    
-                    <div class="product-card">
-                        <img src="../images/product3.jpg" alt="Наушники">
-                        <h3>Беспроводные наушники</h3>
-                        <p>8 500 руб.</p>
+                </div>
+                
+                <div class="product-card">
+                    <img class="product-card__image" src="../images/product4.jpg" alt="Книга">
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Учебник по программированию</h3>
+                        <p class="product-card__price">1 200 руб.</p>
+                        <button class="product-card__button">В корзину</button>
                     </div>
-                    
-                    <div class="product-card">
-                        <img src="../images/product4.jpg" alt="Книга">
-                        <h3>Учебник по программированию</h3>
-                        <p>1 200 руб.</p>
+                </div>
+                
+                <div class="product-card">
+                    <img class="product-card__image" src="../images/product5.jpg" alt="Клавиатура">
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Механическая клавиатура</h3>
+                        <p class="product-card__price">4 500 руб.</p>
+                        <button class="product-card__button">В корзину</button>
                     </div>
-                    
-                    <div class="product-card">
-                        <img src="../images/product5.jpg" alt="Клавиатура">
-                        <h3>Механическая клавиатура</h3>
-                        <p>4 500 руб.</p>
-                    </div>
-                    
-                    <div class="product-card">
-                        <img src="../images/product6.jpg" alt="Монитор">
-                        <h3>Монитор 24 дюйма</h3>
-                        <p>15 000 руб.</p>
+                </div>
+                
+                <div class="product-card">
+                    <img class="product-card__image" src="../images/product6.jpg" alt="Монитор">
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Монитор 24 дюйма</h3>
+                        <p class="product-card__price">15 000 руб.</p>
+                        <button class="product-card__button">В корзину</button>
                     </div>
                 </div>
             </div>
-            <div class="footer">Футер</div>    
-        </div>
-    </body>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__text">&copy; 2025 X2App. Все права защищены.</p>
+        </footer>
+    </div>
+
+    <script src="../script/script.js"></script>
+</body>
 </html>

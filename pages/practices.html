@@ -7,50 +7,61 @@
     <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
-    <div class="page-container">
+    <div class="page">
         <header class="header">
-            <h1>X2App</h1>
+            <h1 class="header__title">Моё портфолио</h1>
         </header>
         
         <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
-                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="../index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="news.html">Новости</a>
+                </li>
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="practices.html">Практики</a>
+                </li> 
+                <li class="nav__item">
+                    <a class="nav__link" href="goods.html">Товары</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
             </ul>
         </nav>
         
-        <main class="content">
-            <h1>Практические материалы</h1>
-            
-            <section class="experience-grid">
-                <article class="practice-item">
-                    <h2>Практика 1: Основы HTML</h2>
-                    <p>Изучение базовых тегов HTML, создание простых веб-страниц.</p>
-                    <p><strong>Темы:</strong> Структура HTML-документа, текстовые теги, списки, таблицы, формы.</p>
-                    <a href="../practices/html-basics.pdf">Скачать материал</a>
-                </article>
-                
-                <article class="practice-item">
-                    <h2>Практика 2: Работа с CSS</h2>
-                    <p>Основы стилизации веб-страниц, работа с селекторами и свойствами.</p>
-                    <p><strong>Темы:</strong> Селекторы, боковая модель, Flexbox, Grid, анимации.</p>
-                    <a href="../practices/css-basics.pdf">Скачать материал</a>
-                </article>
-                
-                <article class="practice-item">
-                    <h2>Практика 3: JavaScript для начинающих</h2>
-                    <p>Введение в программирование на JavaScript, базовые конструкции языка.</p>
-                    <p><strong>Темы:</strong> Переменные, типы данных, функции, объекты, DOM-манипуляции.</p>
-                    <a href="../practices/js-basics.pdf">Скачать материал</a>
-                </article>
+        <main class="main">
+            <section class="practices">
+                <h2 class="practices__title">Практические материалы</h2>
+                <div class="practices__list">
+                    <article class="practice-item">
+                        <h3 class="practice-item__title">Практика 1: Основы HTML</h3>
+                        <p class="practice-item__text">Изучение базовых тегов HTML, создание простых веб-страниц. В этом модуле вы научитесь создавать структуру веб-страницы, работать с текстом, изображениями и ссылками.</p>
+                        <p class="practice-item__text"><strong>Темы:</strong> Структура HTML-документа, текстовые теги, списки, таблицы, формы, семантическая верстка.</p>
+                        <a href="../practices/html-basics.pdf" class="practice-item__link">Скачать материал</a>
+                    </article>
+                    
+                    <article class="practice-item">
+                        <h3 class="practice-item__title">Практика 2: Работа с CSS</h3>
+                        <p class="practice-item__text">Основы стилизации веб-страниц, работа с селекторами и свойствами. Научитесь создавать современные и адаптивные интерфейсы с помощью каскадных таблиц стилей.</p>
+                        <p class="practice-item__text"><strong>Темы:</strong> Селекторы, боковая модель, позиционирование, Flexbox, Grid, анимации, медиа-запросы.</p>
+                        <a href="../practices/css-basics.pdf" class="practice-item__link">Скачать материал</a>
+                    </article>
+                    
+                    <article class="practice-item">
+                        <h3 class="practice-item__title">Практика 3: JavaScript для начинающих</h3>
+                        <p class="practice-item__text">Введение в программирование на JavaScript, базовые конструкции языка. Освойте фундаментальные концепции программирования и научитесь добавлять интерактивность на веб-страницы.</p>
+                        <p class="practice-item__text"><strong>Темы:</strong> Переменные, типы данных, функции, объекты, DOM-манипуляции, события.</p>
+                        <a href="../practices/js-basics.pdf" class="practice-item__link">Скачать материал</a>
+                    </article>
+                </div>
             </section>
         </main>
         
         <footer class="footer">
-            <p>&copy; 2025 X2App. Все права защищены.</p>
+            <p class="footer__text">&copy; 2024 Мой сайт</p>
         </footer>    
     </div>
 </body>
