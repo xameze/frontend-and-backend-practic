@@ -337,7 +337,6 @@ h3 {
     text-decoration: underline;
 }
 
-/* ===== СТИЛИ ДЛЯ КНОПКИ ===== */
 button {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -358,7 +357,6 @@ button:hover {
     background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
 }
 
-/* ===== СТИЛИ ДЛЯ СТРАНИЦЫ ПРАКТИК ===== */
 .practice-item {
     background: white;
     padding: 30px;
@@ -404,7 +402,6 @@ button:hover {
     box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
 }
 
-/* ===== АДАПТИВНОСТЬ ===== */
 @media (max-width: 768px) {
     .nav-list {
         flex-direction: column;
@@ -426,5 +423,85 @@ button:hover {
     
     .contact-info {
         padding: 20px;
+    }
+}
+
+.page-container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+    min-height: 100vh;
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.content {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+
+.news-container {
+    display: grid;
+    gap: 25px;
+}
+
+
+.about-me h2,
+.skills-container h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr;
     }
 }
